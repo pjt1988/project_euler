@@ -1,0 +1,18 @@
+not easily solvable with standard data types...
+
+but..
+F_n = (phi^n - psi^n)/(phi-psi) = (phi^n - psi^n)/sqrt(5) 
+
+all we have to do is solve for n st F_n >= 10^1000, and use wolfram alpha to get the fibonacci number. trivial! 
+
+phi^n - psi^n > sqrt(5)*10^1000
+
+Approximation: psi^n -> 0, since psi<1, and n is expected to be quite large.
+
+therefore, phi^n > sqrt(5)*10^1000
+
+n > log(sqrt(5)*10^1000)/log(phi)...
+
+n > log(sqrt(5))/log(phi) + 1000/log(phi)
+
+easy enough..
